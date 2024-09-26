@@ -1,0 +1,55 @@
+footer {
+  background-color: #495E57;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px 15vw;
+  color:#ffffff;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: left;
+}
+
+#ftimg {
+  width: 170px;
+  height: 335px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+}
+
+#ftimg > img {
+  width: 100%;
+}
+
+footer > p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: left;
+}
+
+#doormat, #contact, #smedia {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#doormat > p > a, #doormat > p > Link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#otsikko {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 368px) {
+  #footer {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+}

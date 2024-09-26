@@ -1,0 +1,42 @@
+#about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows items to wrap when needed */
+  gap: 30px;
+  padding: 80px 15vw;
+  box-sizing: border-box;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#about_text {
+  flex: 1; /* Allow text to take available space */
+  max-width: 406px; /* Maintain maximum width */
+  color: #000;
+  text-align: left;
+  font-weight: 600;
+  padding: 20px; /* Padding for internal spacing */
+}
+
+#about_pics {
+  flex: 1; /* Allow image to take available space */
+  max-width: 452px; /* Maintain maximum width */
+  height: auto; /* Allow height to adjust based on content */
+  margin: 0 auto; /* Center the images */
+}
+
+@media only screen and (max-width: 840px) {
+  #about_pics {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 316px; /* Maintain maximum width */
+    margin-bottom: 40px; /* Reduced margin for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #about {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center align on smaller screens */
+  }
+}

@@ -1,0 +1,80 @@
+#bookingPage {
+  padding: 40px; /* Increased padding */
+  max-width: 400px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: 40px
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Added margin for more space below the title */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Increased margin for more space between fields */
+}
+
+.required {
+  color: red; /* Asterisk in red */
+}
+
+.errorMs {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 5px; /* Space between error message and input */
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Space above the action buttons */
+}
+
+input[type="submit"], button {
+  padding: 12px; /* Increased padding for better button size */
+  border: none;
+  background-color: #495E57;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 48%; /* Two buttons side by side */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+input[type="submit"]:disabled {
+  background-color: grey; /* Disable button */
+}
+
+input[type="submit"]:hover:not(:disabled), button:hover {
+  background-color: #3b4a45; /* Darker shade on hover */
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+h2 {
+  margin-top: 20px;
+}
+

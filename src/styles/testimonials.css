@@ -1,0 +1,100 @@
+#testimonials {
+  background-color: #495E57;
+  padding: 20px 15vw 50px 15vw;
+}
+
+h4 {
+  margin-bottom: 10px 0px 35px 0px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 44px;
+}
+
+#tts {
+  display: flex;
+  justify-content: center; /* Center all items */
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+#tts > div {
+  width: 206px;
+  /* Remove fixed height to allow flexibility based on content */
+  margin: 10px; /* Add margin for space between items */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center all content within the testimonial */
+  padding: 20px;
+  background-color: #fff;
+}
+
+.rating img {
+  width: 120%;
+  max-width: 74.4px;
+}
+
+#tts > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Center align the inner content */
+}
+
+#tts > div > div > p {
+  margin: 0;
+  text-align: center; /* Center text for consistency */
+}
+
+#tts > div > div > img {
+  width: 100px; /* Set a fixed width for the image */
+  height: 100px; /* Set a fixed height for the image */
+  border-radius: 50%; /* Make the image round */
+}
+
+img + p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.name {
+  margin-top: 10px; /* Space between image and name */
+  text-align: center; /* Center align the name */
+}
+
+#tts > div:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  #tts > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  #testimonials {
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  #tts {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  h4 {
+    font-size: 28px;
+  }
+  .name, img + p {
+    font-size: 16px;
+  }
+
+  .rating {
+    font-size: 22px;
+  }
+}

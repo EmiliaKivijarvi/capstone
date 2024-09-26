@@ -1,0 +1,38 @@
+#da-wrapper {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  background-color: #F4CE14;
+  border-radius: 16px;
+  cursor: pointer;
+  z-index: 40;
+}
+
+#arrow-text {
+  color: #000;
+  font-size: 20px;
+}
+
+@keyframes atxt-anim {
+  from {height: 0%; opacity: 0;}
+  to {height: initial; opacity: 1;}
+}
+
+#arrow-text.md-block {
+  display: block;
+  animation-name: atxt-anim;
+  animation-duration: 0.5s;
+}
+
+#arrow-text.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #arrow-text.md-block {
+    display: none;
+  }
+}
